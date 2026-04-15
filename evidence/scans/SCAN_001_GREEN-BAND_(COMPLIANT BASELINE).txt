@@ -1,0 +1,15 @@
+Scan ID: IMTH-20260407-143312
+Scenario: Small SME, compliant workforce
+Input:
+- 3 employees
+- 2 Saudi
+- Technology sector
+
+Outcome:
+- Green band
+- Low risk score (3.6)
+- Contract issues flagged correctly
+
+Notes:
+- Initial CSV formatting bug fixed (Excel quoting issue)
+- System now correctly parses roster

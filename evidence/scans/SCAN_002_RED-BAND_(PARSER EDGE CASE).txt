@@ -1,0 +1,122 @@
+SCAN 002 – RED BAND / HIGH-RISK COMPLIANCE TEST
+Date: 2026-04-07
+Scenario Type: Negative / Stress Test
+Company Name Used: Al Makan Trucks
+Sector Used: Technology
+
+OBJECTIVE
+This scan was designed to test whether the Imtithal.ai MVP can correctly identify a high-risk compliance scenario involving:
+1. Very low Saudization ratio
+2. Multiple problematic labor contract terms
+3. Severe legal/compliance risk requiring escalation
+
+INPUTS USED
+--------------------------------------------------
+1. Company Profile
+- Company Name: Al Makan Trucks
+- Industry Sector: Technology
+- Total Employees: 15
+- Saudi Employees: 2
+- Expected Saudization (profile input): 13.3%
+
+2. Employee Roster CSV
+Filename: red_band_roster.csv
+
+Intended roster composition:
+- 15 active employees
+- 2 Saudi employees
+- 13 non-Saudi employees
+- Expected result if parsed correctly:
+  - Saudization rate = 13.3%
+  - Below Technology threshold (40%)
+  - RED / high-risk non-compliance scenario
+
+3. Contract PDF
+Filename: toxic_contract_v1.pdf
+
+The contract intentionally included multiple suspicious / non-compliant clauses for testing, including:
+- "unlimited working hours"
+- "no paid overtime"
+- "waive rights"
+- "no annual leave"
+- "immediate termination without notice"
+- "internal company policy supersedes local labor regulations"
+
+EXPECTED SYSTEM BEHAVIOR
+--------------------------------------------------
+Expected outputs for this test case:
+- High or Critical overall risk
+- RED Saudization band
+- Saudization non-compliance warning
+- Multiple contract risk findings
+- Escalation / legal review recommendation
+
+ACTUAL OBSERVED RESULT
+--------------------------------------------------
+The scan successfully produced a HIGH-RISK result and RED BAND classification.
+
+Observed outputs included:
+- Overall Risk Score: 65.7 / 100
+- Risk Level: High Risk
+- Saudization Status: RED Band
+- Multiple contract findings detected
+- Multiple urgent recommendations generated
+
+Contract findings successfully detected included:
+- Missing clause warnings
+- "waive rights"
+- "unlimited working hours"
+- "no annual leave"
+- "immediate termination without notice"
+
+IMPORTANT TEST OBSERVATION / BUG
+--------------------------------------------------
+The roster did NOT parse correctly in this run.
+
+Observed issue:
+- The system reported:
+  "Missing required columns: name, nationality, job_family, status"
+- Roster summary in the JSON output showed:
+  - total_count = 0
+  - saudi_count = 0
+  - non_saudi_count = 0
+  - saudi_percentage = 0.0
+
+This means the RED Saudization result was still triggered, but it was based on a roster ingestion / validation failure rather than a successful structured calculation from the intended 15-row CSV.
+
+INTERPRETATION
+--------------------------------------------------
+This scan is still valid as an MVP evidence artifact because it demonstrates that the system can:
+
+1. Detect and escalate severe contract compliance issues
+2. Generate structured high-risk outputs
+3. Produce explainable legal/compliance findings
+4. Surface roster data-quality failures as explicit risk flags
+
+However, this scan also reveals an important MVP improvement area:
+- CSV ingestion / roster validation robustness
+
+WHY THIS TEST IS IMPORTANT
+--------------------------------------------------
+This evidence proves that Imtithal.ai can handle a "worst-case" scenario and produce:
+- explainable risk scoring
+- actionable compliance recommendations
+- visible escalation logic
+- structured audit-style outputs
+
+It also proves the MVP can expose data-quality problems instead of silently failing.
+
+CONCLUSION
+--------------------------------------------------
+Scan 002 is classified as a successful HIGH-RISK / RED-BAND stress test with one known ingestion issue:
+- Contract risk detection: PASS
+- High-risk escalation logic: PASS
+- Explainable output: PASS
+- Roster parsing reliability: NEEDS IMPROVEMENT
+
+Recommended follow-up:
+Re-run this same scenario after fixing roster CSV parsing so the evidence set includes:
+1. RED-BAND case (with parser issue)
+2. RED-BAND case (fully successful clean parse)
+
+This will strengthen the technical validation pack for future demos.

@@ -1,0 +1,61 @@
+{
+  "report_id": "IMTH-20260407-143312",
+  "scan_timestamp": "2026-04-07T14:33:12.932807",
+  "company_name": "Nandos Chicken",
+  "sector": "Technology",
+  "roster_summary": {
+    "total_count": 3,
+    "saudi_count": 2,
+    "non_saudi_count": 1,
+    "saudi_percentage": 66.67,
+    "validation_issues": []
+  },
+  "saudization_compliance": {
+    "status": "compliant",
+    "current_percentage": 66.67,
+    "required_percentage": 40.0,
+    "gap": 26.67,
+    "color_band": "green",
+    "explanation": "Preliminary scan suggests Saudization rate (66.7%) appears to meet the green band threshold (40%). Manual verification recommended."
+  },
+  "overall_risk_score": 3.6,
+  "risk_level": "low",
+  "risk_flags": [],
+  "contract_findings": [
+    {
+      "document_name": "test_contract.pdf",
+      "finding_type": "missing_clause",
+      "description": "Contract may be missing required clause: 'salary details' (preliminary pattern match)",
+      "severity": "medium"
+    },
+    {
+      "document_name": "test_contract.pdf",
+      "finding_type": "missing_clause",
+      "description": "Contract may be missing required clause: 'job description' (preliminary pattern match)",
+      "severity": "medium"
+    },
+    {
+      "document_name": "test_contract.pdf",
+      "finding_type": "missing_clause",
+      "description": "Contract may be missing required clause: 'workplace location' (preliminary pattern match)",
+      "severity": "medium"
+    },
+    {
+      "document_name": "test_contract.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Contract contains potentially problematic term: 'waive rights' (requires manual review)",
+      "severity": "high"
+    },
+    {
+      "document_name": "test_contract.pdf",
+      "finding_type": "needs_review",
+      "description": "Contract appears unusually short (< 500 characters). May be incomplete or improperly scanned.",
+      "severity": "medium"
+    }
+  ],
+  "priority_actions": [
+    "📄 Review 1 high-severity contract finding(s) with qualified Saudi labor law counsel"
+  ],
+  "scan_methodology": "Deterministic rule-based compliance engine v0.1 (MVP)",
+  "disclaimer": "⚠️ This is a preliminary compliance scan using example rules for demonstration purposes. Manual legal review by qualified Saudi labor law counsel is required. These results are not authoritative legal guidance."
+}

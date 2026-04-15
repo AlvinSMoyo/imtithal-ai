@@ -1,0 +1,144 @@
+{
+  "report_id": "IMTH-20260407-192407",
+  "scan_timestamp": "2026-04-07T19:24:07.482645",
+  "company_name": "Al Makan Trucks",
+  "sector": "Technology",
+  "roster_summary": {
+    "total_count": 15,
+    "saudi_count": 2,
+    "non_saudi_count": 13,
+    "saudi_percentage": 13.33,
+    "validation_issues": []
+  },
+  "saudization_compliance": {
+    "status": "non_compliant",
+    "current_percentage": 13.33,
+    "required_percentage": 40.0,
+    "gap": -26.67,
+    "color_band": "red",
+    "explanation": "⚠️ Preliminary scan suggests Saudization rate (13.3%) may be critically low (possible red band). Immediate legal review recommended."
+  },
+  "overall_risk_score": 82.94,
+  "risk_level": "critical",
+  "risk_flags": [
+    {
+      "severity": "critical",
+      "category": "saudization",
+      "title": "Possible Critical Saudization Non-Compliance",
+      "description": "Current rate: 13.3%, Minimum threshold may be: 25%",
+      "affected_data": "Only 2/15 employees are Saudi (per roster)",
+      "recommendation": "URGENT: Consult with Saudi labor law counsel immediately. Approximately 7 Saudi hires may be needed. Verify official status via Qiwa portal."
+    }
+  ],
+  "contract_findings": [
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "missing_clause",
+      "description": "Contract may be missing required clause: 'probation period' (preliminary pattern match)",
+      "severity": "medium"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "missing_clause",
+      "description": "Contract may be missing required clause: 'termination notice' (preliminary pattern match)",
+      "severity": "medium"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "missing_clause",
+      "description": "Contract may be missing required clause: 'salary details' (preliminary pattern match)",
+      "severity": "medium"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "missing_clause",
+      "description": "Contract may be missing required clause: 'sick leave' (preliminary pattern match)",
+      "severity": "medium"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "missing_clause",
+      "description": "Contract may be missing required clause: 'job description' (preliminary pattern match)",
+      "severity": "medium"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "missing_clause",
+      "description": "Contract may be missing required clause: 'workplace location' (preliminary pattern match)",
+      "severity": "medium"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Contract contains potentially problematic term: 'waive rights' (requires manual review)",
+      "severity": "high"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Contract contains potentially problematic term: 'unlimited working hours' (requires manual review)",
+      "severity": "high"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Contract contains potentially problematic term: 'no annual leave' (requires manual review)",
+      "severity": "high"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Contract contains potentially problematic term: 'immediate termination without notice' (requires manual review)",
+      "severity": "high"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Critical Risk: Found reference to 'without additional compensation' under category 'unpaid overtime / compensation risk'",
+      "severity": "high"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Critical Risk: Found reference to 'no paid overtime' under category 'unpaid overtime / compensation risk'",
+      "severity": "high"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Critical Risk: Found reference to 'waive rights' under category 'rights waiver / legal override risk'",
+      "severity": "high"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Critical Risk: Found reference to 'supersedes local labor regulations' under category 'rights waiver / legal override risk'",
+      "severity": "high"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Critical Risk: Found reference to 'termination without notice' under category 'illegal termination risk'",
+      "severity": "high"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Critical Risk: Found reference to 'immediate termination' under category 'illegal termination risk'",
+      "severity": "high"
+    },
+    {
+      "document_name": "toxic_contract_v1.pdf",
+      "finding_type": "suspicious_term",
+      "description": "Critical Risk: Found reference to 'immediate termination without notice' under category 'illegal termination risk'",
+      "severity": "high"
+    }
+  ],
+  "priority_actions": [
+    "🚨 URGENT: Consult with Saudi labor law counsel regarding Saudization compliance. Preliminary scan suggests rate may need to increase from 13.33% to approximately 40.0%.",
+    "🚨 Possible Critical Saudization Non-Compliance: URGENT: Consult with Saudi labor law counsel immediately. Approximately 7 Saudi hires may be needed. Verify official status via Qiwa portal.",
+    "📄 Review 11 high-severity contract finding(s) with qualified Saudi labor law counsel"
+  ],
+  "scan_methodology": "Deterministic rule-based compliance engine v0.1 (MVP)",
+  "disclaimer": "⚠️ This is a preliminary compliance scan using example rules for demonstration purposes. Manual legal review by qualified Saudi labor law counsel is required. These results are not authoritative legal guidance."
+}

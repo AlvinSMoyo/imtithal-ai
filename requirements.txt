@@ -1,0 +1,26 @@
+# FastAPI Backend
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Frontend
+streamlit==1.30.0
+requests==2.31.0  # ADDED: Used by Streamlit for API calls
+
+# Data Processing
+pandas==2.1.4
+numpy==1.26.3
+
+# PDF Processing
+PyMuPDF==1.23.8
+pdfplumber==0.10.3
+
+# Database
+sqlalchemy==2.0.25
+
+# Validation
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Utilities
+python-dotenv==1.0.0
